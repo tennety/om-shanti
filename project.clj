@@ -19,4 +19,5 @@
         :output-to "resources/public/javascript/client-dev.js",
         :source-map "resources/public/javascript/client-dev.js.map"
         :optimizations :whitespace
+        :preamble ["vendor/react.js"]
         :pretty-print true }}}})

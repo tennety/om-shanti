@@ -14,5 +14,6 @@ logs/
 /.lein-repl-history
 /.nrepl-port
 /resources/public/javascript/
-/repl/**/*
-/out/**/*
+/resources/vendor/
+/repl/
+/out/
