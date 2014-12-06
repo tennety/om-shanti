@@ -1,0 +1,15 @@
+<html>
+  <head><title>ClojureScript in Development</title></head>
+  <body>
+    <!-- ... application content ... -->
+    <h1>Hello, ClojureScript!</h1>
+    <!-- Google Closure Base Libraries: -->
+    <script src="javascript/goog/base.js"></script>
+    <!-- Your :output-to file: -->
+    <script src="javascript/client-dev.js"></script>
+    <!-- Require your main namespace: -->
+    <script>goog.require('shanti.client');</script>
+    <!-- Your application's main function: -->
+    <script>shanti.client.start_client();</script>
+  </body>
+</html>
