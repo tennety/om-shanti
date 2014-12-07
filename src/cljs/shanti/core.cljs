@@ -1,6 +1,7 @@
 (ns shanti.core
   (:require [om.core :as om :include-macros true]
-            [om.dom :as dom :include-macros true]))
+            [om.dom :as dom :include-macros true]
+            [markdown.core :refer [md->html]]))
 
 (def model (atom {:index 0
                   :slides []}))
@@ -19,7 +20,8 @@
     (render [_]
       (dom/section #js {:className "slide"}
         (dom/h1 #js {} (:title model))
-        (dom/div #js {} (:body model))))))
+        (dom/div #js {:dangerouslySetInnerHTML #js {:__html (md->html (:body model))}})
+        (dom/div #js {:role "note"} (:notes model))))))
 
 (defn app [model owner]
   (reify

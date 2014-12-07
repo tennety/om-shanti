@@ -3,10 +3,11 @@
             [shanti.core :as s]))
 
 (def slides
-  [{:title "ClojureScript!"
-    :body "How 'bout dem apples"}
-   {:title "Slide 2"
-    :body "Caden"}])
+  [{:title "A Bird's Eye View of ClojureScript"
+    :body "###You don't *have* to write JavaScript!"}
+   {:title "Motivation"
+    :body "Birding"
+    :notes "Talk about why"}])
 
 (defn ^:export start []
   (repl/connect "http://localhost:9000/repl")
