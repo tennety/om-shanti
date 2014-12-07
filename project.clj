@@ -7,7 +7,7 @@
                  [compojure "1.3.1"]
                  [ring/ring-jetty-adapter "1.3.2"]
                  [org.clojure/clojurescript "0.0-2371"]
-                 [om "0.7.3"]]
+                 [om "0.8.0-beta2"]]
   :plugins [[lein-cljsbuild "1.0.3"]]
   :source-paths ["src/clj"]
   :cljsbuild
@@ -19,5 +19,5 @@
         :output-to "resources/public/javascript/client-dev.js",
         :source-map "resources/public/javascript/client-dev.js.map"
         :optimizations :whitespace
-        :preamble ["vendor/react.js"]
+        :preamble ["react/react.js"]
         :pretty-print true }}}})
